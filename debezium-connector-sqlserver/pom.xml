@@ -147,6 +147,7 @@
                             <!-- A Docker image using the SQL Server -->
                             <name>${docker.db}</name>
                             <run>
+                                <platform>linux/amd64</platform> <!-- add platform configuration -->
                                 <namingStrategy>none</namingStrategy>
                                 <env>
                                     <ACCEPT_EULA>Y</ACCEPT_EULA>

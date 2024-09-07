@@ -192,6 +192,7 @@
                             <!-- A Docker image using the Postgres Server with the DBZ decoderbufs plugin -->
                             <name>debezium/postgres-server-test-database</name>
                             <run>
+                                <platform>linux/amd64</platform> <!-- add platform configuration -->
                                 <namingStrategy>none</namingStrategy>
                                 <env>
                                     <POSTGRES_USER>${postgres.user}</POSTGRES_USER>
