@@ -212,6 +212,7 @@
                             <!-- A Docker image using a partial MySQL installation maintained by MySQL team. -->
                             <name>debezium/mysql-server-test-database</name>
                             <run>
+                                <platform>linux/amd64</platform> <!-- add platform configuration -->
                                 <namingStrategy>none</namingStrategy>
                                 <env>
                                     <MYSQL_ROOT_PASSWORD>debezium-rocks</MYSQL_ROOT_PASSWORD>
@@ -266,6 +267,7 @@
                              that enable mysql ssl connection -->
                             <name>debezium/mysql-server-test-database-ssl</name>
                             <run>
+                                <platform>linux/amd64</platform> <!-- add platform configuration -->
                                 <namingStrategy>none</namingStrategy>
                                 <env>
                                     <MYSQL_ROOT_PASSWORD>debezium-rocks</MYSQL_ROOT_PASSWORD>
@@ -329,6 +331,7 @@
                             <name>debezium/mysql-server-gtids-test-database</name>
                             <alias>database-gtids</alias>
                             <run>
+                                <platform>linux/amd64</platform> <!-- add platform configuration -->
                                 <namingStrategy>alias</namingStrategy>
                                 <env>
                                     <MYSQL_ROOT_PASSWORD>debezium-rocks</MYSQL_ROOT_PASSWORD>
@@ -385,6 +388,7 @@
                             -->
                             <name>debezium/mysql-server-gtids-test-database-replica</name>
                             <run>
+                                <platform>linux/amd64</platform> <!-- add platform configuration -->
                                 <namingStrategy>none</namingStrategy>
                                 <env>
                                     <MYSQL_ROOT_PASSWORD>debezium-rocks</MYSQL_ROOT_PASSWORD>
@@ -442,6 +446,7 @@
                             -->
                             <name>debezium/percona-server-test-database</name>
                             <run>
+                                <platform>linux/amd64</platform> <!-- add platform configuration -->
                                 <namingStrategy>none</namingStrategy>
                                 <env>
                                     <MYSQL_ROOT_PASSWORD>debezium-rocks</MYSQL_ROOT_PASSWORD>
